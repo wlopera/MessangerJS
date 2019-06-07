@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app = "App">
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>MEAN Facturas</title>
+      <!-- Cargamos bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <!-- Cargamos angular -->
+      <script src="http://code.angularjs.org/1.2.0-rc.3/angular.js"></script>
+      <!-- Cargamos el javascript de angular -->
+      <script src="app/app.js"></script>
+
+  </head>
+
+  <body ng-controller="Controller">
+
+    <h1>Correo</h1>
+    <div class="mensaje">
+      Para: <input ng-model="form.to" placeholder="Para" size="50px;" /><br />
+      Asunto: <input ng-model="form.subject" placeholder="Asunto" size="50px;" /><br> 
+      Texto: <input ng-model="form.message" placeholder="Mensaje" size="150px;" /> 
+      <br /><br />
+      <button ng-click="sendEmail()">Enviar</button>
+    </div>
+  
+  </body>
+
+</html>
